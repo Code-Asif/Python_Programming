@@ -9,6 +9,6 @@ def fib(n):
 n = int(input("Enter the number of terms: "))
 print("Fibonacci sequence:")
 for i in range(n):
-    print(fib(i))
+    print(fib(i), end="\t")
 
 
