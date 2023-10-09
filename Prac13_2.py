@@ -1,11 +1,13 @@
 #Python Program to Reverse a String Without using Recursion.
 
-def reverse(str):
-    newStr = ""
-    for i in range(len(str)-1,-1,-1):
-        newStr += str[i]
-    return newStr
+def rev(str, n):
+    j= n-1
+    str2 = ""
+    for i in range(n):
+        str2 += str[j]
+        j -= 1
+    return str2
+    
 
 str = input("Enter a string: ")
-print("Reversed string:")
-print(reverse(str))
+print("Reversed string:", rev(str, len(str)))
