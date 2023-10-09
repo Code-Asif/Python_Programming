@@ -1,15 +1,15 @@
 #Python Program to Find Largest Number in a List
 
-def findLargest(list):
-    if len(list) == 1:
-        return list[0]
-    else:
-        return max(list[0], findLargest(list[1:]))
-    
+def max(list, n):
+    max = list[0]
+    for i in range(n):
+        if max < list[i]:
+            max = list[i]
+    return max
+
 list = []
-n = int(input("Enter number of elements: "))
+n = int(input("Enter number of element: "))
 for i in range(n):
     list.append(int(input("Enter element: ")))
-    
-print("Largest number in the list:")
-print(findLargest(list))
+
+print("Max: ", max(list,n))
