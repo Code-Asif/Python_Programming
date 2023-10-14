@@ -5,7 +5,7 @@ def printDict(dict):
         print(i, ":", dict[i])
 
 def main():
-    file = open("file.txt", "r")
+    file = open("Basics.py", "r")
     dict = {}
     for line in file:
         for word in line.split():
