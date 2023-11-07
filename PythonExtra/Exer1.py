@@ -1,0 +1,11 @@
+#Calculator
+a = int(input('Enter a number'))
+b = int(input('Enter another number'))
+print('Printing all the operation on a and b')
+print('Addition of ',a,'and',b,'= ',a+b)
+print('Subtraction of ',a,'and',b,'= ',a-b)
+print('Multiplication of ',a,'and',b,'= ',a*b)
+print('Division of ',a,'and',b,'= ',a/b)
+print('Modulus of ',a,'and',b,'= ',a%b)
+print('Expo of ',a,'and',b,'= ',a**b)
+print('Floor division of ',a,'and',b,'= ',a//b)
