@@ -1,5 +1,6 @@
 import random
 import string
+
 while True:
     a = input("Enter the sentence: ")
     code = int(input("For code press 1 and for decode press 0 "))
