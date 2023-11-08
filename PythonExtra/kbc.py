@@ -26,40 +26,40 @@ questions = [
     "int [][]a = {1,2,3}", "None", 2
   ],
   [
-    "Which language was used to create fb?", "Python", "French", "JavaScript",
-    "Php", "None", 4
+    "Arrays in java are-", "Object reference", "Object", "Primitive data types",
+    "Class", "None", 1
   ],
   [
-    "Which language was used to create fb?", "Python", "French", "JavaScript",
-    "Php", "None", 4
+    "When is the object created with new keyword?", "At run time", "At compile time", "Depends on the code",
+    "Never", "None", 1
   ],
   [
-    "Which language was used to create fb?", "Python", "French", "JavaScript",
-    "Php", "None", 4
+    "Identify the keyword among the following that makes a variable belong to a class,rather than being defined for each instance of the class.", "final", "static", "volatile",
+    "abstract", "None", 2
   ],
   [
-    "Which language was used to create fb?", "Python", "French", "JavaScript",
-    "Php", "None", 4
+    "compareTo() returns", "true", "flase", "An int value",
+    "Nothing", "None", 3
   ],
   [
-    "Which language was used to create fb?", "Python", "French", "JavaScript",
-    "Php", "None", 4
+    "To which of the following does the class string belong to.", "java.lang", "java.awt", "java.applet",
+    "java.string", "None", 1
   ],
   [
-    "Which language was used to create fb?", "Python", "French", "JavaScript",
-    "Php", "None", 4
+    "Total constructor string class have?", "3", "7", "13",
+    "20", "None", 3
   ],
   [
-    "Which language was used to create fb?", "Python", "French", "JavaScript",
-    "Php", "None", 4
+    "Identify the return type of a method that does not return any value.", "int", "void", "double",
+    "short", "None", 2
   ],
   [
-    "Which language was used to create fb?", "Python", "French", "JavaScript",
-    "Php", "None", 4
+    "Output of Math.floor(3.6)?", "3", "3.0", "4",
+    "4.0", "None", 2
   ],
   [
-    "Which language was used to create fb?", "Python", "French", "JavaScript",
-    "Php", "None", 4
+    "Where does the system stores parameters and local variables whenever a method is invoked?", "Heap", "stack", "array",
+    "tree", "None", 2
   ]
 ]
 
