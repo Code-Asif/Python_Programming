@@ -7,15 +7,15 @@ questions = [
   ],
   [
     "What is the size of float and double in java?", "32 and 64", "32 and 32", "64 and 64",
-    "64 and 32", "None", 2
+    "64 and 32", "None", 1
   ],
   [
     "Automatic type conversion is possible in which of the possible cases?", "Byte to int", "int to long", "Long to int",
-    "short to int", "None", 3
+    "short to int", "None", 2
   ],
   [
     "Select the valid statement", "char[] ch = new char(5)", "char[] ch = new char[5]", "chat[] ch = new char()",
-    "char[] ch = new char[]", "None", 3
+    "char[] ch = new char[]", "None", 2
   ],
   [
     "Which language was used to create fb?", "Python", "French", "JavaScript",
@@ -49,9 +49,21 @@ questions = [
     "Which language was used to create fb?", "Python", "French", "JavaScript",
     "Php", "None", 4
   ],
+  [
+    "Which language was used to create fb?", "Python", "French", "JavaScript",
+    "Php", "None", 4
+  ],
+  [
+    "Which language was used to create fb?", "Python", "French", "JavaScript",
+    "Php", "None", 4
+  ],
+  [
+    "Which language was used to create fb?", "Python", "French", "JavaScript",
+    "Php", "None", 4
+  ]
 ]
 
-levels = [1000, 2000, 3000, 5000, 10000, 20000, 40000, 80000, 160000, 320000]
+levels = [1000, 2000, 3000, 5000, 10000, 20000, 40000, 80000, 160000, 320000, 640000, 1250000, 2500000, 5000000, 10000000]
 money = 0
 for i in range(0, len(questions)):
   
