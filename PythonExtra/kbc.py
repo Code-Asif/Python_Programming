@@ -18,12 +18,12 @@ questions = [
     "char[] ch = new char[]", "None", 2
   ],
   [
-    "Which language was used to create fb?", "Python", "French", "JavaScript",
-    "Php", "None", 4
+    "When an array is passed to a method, what does the method receive?", "The reference of array", "A copy of the array", "Length of the array",
+    "Copy of first element", "None", 1
   ],
   [
-    "Which language was used to create fb?", "Python", "French", "JavaScript",
-    "Php", "None", 4
+    "Select the valid statement to declare and initialize an array.", "int []a = {}", "int []a = {1,2,3}", "int []a = (1,2,3)",
+    "int [][]a = {1,2,3}", "None", 2
   ],
   [
     "Which language was used to create fb?", "Python", "French", "JavaScript",
