@@ -1,4 +1,6 @@
 # It is a simple quiz game in which you can consequtively answer all the question and earn some rewards
+# Developer - Asif Alam
+# Date - 08-11-23
 questions = [
     [
         "Which language was used to create fb?",
