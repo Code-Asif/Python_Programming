@@ -25,11 +25,12 @@ def check():
         print("\nYou Lose")
 
 
-for i in range(10):
-    user = int(input("\n\nWhat would you choose:"))
+for i in range(5):
+    print("-------------------------------------------")
+    user = int(input("\nWhat would you choose: "))
     comp = random.randint(0, 2)
-    time.sleep(1)
-    print("\nComputer Chooses :", comp)
+    # time.sleep(1)
+    print("Computer Chooses :", comp)
     print("You choose:", user)
     check()
-print(f"You won {count} out of 10 times")
+print(f"You won {count} out of 5 times")
