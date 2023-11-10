@@ -3,15 +3,15 @@ import os
 import sys
 
 class library:
-    def __init__(self, UNB, title, author, genre, content):  # UNB is unique book number
-        self.UNB = UNB
+    def __init__(self, unb, title, author, genre, content):  # unb is unique book number
+        self.unb = unb
         self.title = title
         self.author = author
         self.genre = genre
         self.content = content
 
     def display_details(self):
-        print(f"The details of book {self.UNB} are:")
+        print(f"The details of book {self.unb} are:")
         print(f"title: {self.title}")
         print(f"author: {self.author}")
         print(f"genre: {self.genre}")
@@ -19,11 +19,11 @@ class library:
         print(self.content)
 
     def save_to_file(self):
-        filename = f"{self.UNB}.txt"
+        filename = f"{self.unb}.txt"
         file_path = os.path.join("book_data", filename)
 
         with open(file_path, "w") as file:
-            file.write(f"UNB:{self.UNB}\n")
+            file.write(f"unb:{self.unb}\n")
             file.write(f"title: {self.title}\n")
             file.write(f"author: {self.author}\n")
             file.write(f"genre: {self.genre}\n")
@@ -52,7 +52,7 @@ def load_books():
                 # print(emp_dict)
 
                 emp = library(
-                    emp_dict["UNB"],
+                    emp_dict["unb"],
                     emp_dict["title"],
                     emp_dict["author"],
                     emp_dict["genre"],
@@ -66,10 +66,10 @@ load_books()
 
 # Function to add employee details
 def add_book():
-    UNB = input("Enter the UNB(unique book number): ")
+    unb = input("Enter the unb(unique book number): ")
     for emp in books:
-        if emp.UNB == UNB:
-            print("A book with the same UNB already exists.")
+        if emp.unb == unb:
+            print("A book with the same unb already exists.")
             return
     title = input("Enter the title: ")
     author = input("Enter the author name: ")
@@ -87,11 +87,11 @@ def add_book():
     content = "\n".join(content_lines)
 
     for emp in books:
-        if emp.UNB == UNB:
-            print("A book already exists with the same UNB.")
+        if emp.unb == unb:
+            print("A book already exists with the same unb.")
             return
 
-    emp = library(UNB, title, author, genre, content)
+    emp = library(unb, title, author, genre, content)
     emp.save_to_file()
     books.append(emp)
     print("Book details added successfully!")
@@ -99,11 +99,11 @@ def add_book():
 
 # Function to display employee details by EMid
 def display_book_details():
-    UNB = input("Enter the UNB to display details: ")
+    unb = input("Enter the unb to display details: ")
     found = False
     print("\n")
     for emp in books:
-        if emp.UNB == UNB:
+        if emp.unb == unb:
             emp.display_details()
             found = True
             break
@@ -114,11 +114,11 @@ def display_book_details():
 
 
 def update_book_details():
-    UNB = input("Enter the UNB of book to modify: ")
+    unb = input("Enter the unb of book to modify: ")
     # Check if the file exists
-    if os.path.exists(os.path.join("book_data", UNB + ".txt")):
+    if os.path.exists(os.path.join("book_data", unb + ".txt")):
         # Open the file in write mode
-        with open(UNB + ".txt", "w") as file:
+        with open(unb + ".txt", "w") as file:
             print("Enter the new details:")
             title = input("title: ")
             author = input("author: ")
@@ -126,7 +126,7 @@ def update_book_details():
             content = input("content: ")
 
             # Write the updated details to the file
-            file.write(f"UNB: { UNB}\n")
+            file.write(f"unb: { unb}\n")
             file.write(f"title: { title}\n")
             file.write(f"author: { author}\n")
             file.write(f"genre: { genre}\n")
@@ -138,9 +138,9 @@ def update_book_details():
 
 
 def print_all_books():
-    print("List of all UNB:")
+    print("List of all unb:")
     for book in books:
-        print(f"{book.UNB}: {book.title}")
+        print(f"{book.unb}: {book.title}")
 
 
 print_all_books()
