@@ -3,7 +3,7 @@ import time
 import win32com.client as win
 
 speaker = win.Dispatch("SAPI.SpVoice")
-list = ["Aashif", "Nikhat", "Kaamraan", "Alam", "Shabana"]
+list = ["Aashif", "Nikhat", "Kaamraan", "Aalam", "Shaabaanaa"]
     
 for name in list:
     names = name.split()
